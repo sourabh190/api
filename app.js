@@ -31,7 +31,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://zealous-jennings.62-151-180-40.plesk.page",
+        url: "https://api-ifxe.onrender.com",
       },
     ],
   },
