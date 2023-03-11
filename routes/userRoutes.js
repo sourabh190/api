@@ -90,9 +90,9 @@ router.post('/send-reset-password-email', UserController.sendUserPasswordResetEm
 
 /**
  * @swagger
- * /api/user/send-reset-password-email/:id/:token:
+ * /api/user/reset-password/:id/:token:
  *   post:
- *     summary: Send Reset Password Email
+ *     summary: Reset Password
  *     tags: [Users]
  *     requestBody:
  *       required: true

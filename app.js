@@ -17,8 +17,6 @@ const options = {
     info: {
       title: "Express API with Swagger",
       version: "0.1.0",
-      description:
-        "Authorization",
       license: {
         name: "MIT",
         url: "https://spdx.org/licenses/MIT.html",
@@ -31,7 +29,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://api-ifxe.onrender.com",
+        url: "http://localhost:8000",
       },
     ],
   },
@@ -57,6 +55,6 @@ app.use(express.json())
 // Load Routes
 app.use("/api/user", userRoutes)
 
-// app.listen(port, () => {
-//   console.log(`Server listening at http://localhost:${port}`)
-// })
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`)
+})
